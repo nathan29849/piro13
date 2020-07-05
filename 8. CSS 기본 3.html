@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>8. CSS 기본 3</title>
+    <style>
+        div ul {
+            width: 200px; background-color: red; margin: 0px auto;
+        }
+        ul > li {
+            font-size: 20px;
+            font-weight: bold;
+            color: orange;
+        }
+        li:hover {
+            color: blue;
+            font-size: 30px;
+        }
+        input:focus {
+            border: 2px solid red;
+            padding: 10px;
+        }
+        input:enabled {
+            color: orange;
+            font-weight: bold;
+        }
+        input:disabled {
+            color: hotpink;
+        }
+        #content {
+            width: 400px;
+        }
+        ol li{
+            list-style: none;
+            border: 1px solid #cccccc;
+            padding: 10px;
+            background-color: #efefef;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        ol li a{
+            color: #000000;
+        }
+        ol li:nth-child(2n-1) {
+            background-color: chocolate;
+        }
+        ol li:first-child, ol li:last-child {
+            background-color: #ffd800;
+        }
+        ol li:first-child {
+            border-radius: 10px 10px 0 0;
+        }
+        ol li:last-child {
+            border-radius: 0 0 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>menu_1</li>
+            <li>menu_2</li>
+            <li>menu_3</li>
+            <li>menu_4</li>
+            <li>menu_5</li>
+        </ul>
+    </div>
+
+    <form>
+        이름: <input type="text" name="uname"/><br />
+        아이디: <input type="text" name="uid"/><br />
+        비밀번호: <input type="password" name="upw" value="12345" disabled="disabled"/><br />
+    </form>
+
+    <div id="content">
+        <ol>
+            <li><a href="#">sun_1</a></li>
+            <li><a href="#">sun_2</a></li>
+            <li><a href="#">sun_3</a></li>
+            <li><a href="#">sun_4</a></li>
+            <li><a href="#">sun_5</a></li>
+            <li><a href="#">sun_6</a></li>
+            <li><a href="#">sun_7</a></li>
+            <li><a href="#">sun_8</a></li>
+        </ol>
+    </div>
+</body>
+</html>
