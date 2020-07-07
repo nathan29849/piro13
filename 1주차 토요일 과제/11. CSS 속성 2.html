@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>11. CSS 속성 2</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            color: #ffffff;
+            font-size: bold;
+            text-align: center;
+        }
+        #content1 {
+            background-color: red;
+        }
+        #content2 {
+            background-color: green;
+            margin: 10px;
+        }
+        #content3 {
+            background-color: blue;
+            padding: 10px;
+        }
+        #content4 {
+            background-color: yellow;
+            margin: 10px;
+            padding: 10px;
+        }
+        #fa {
+            margin:0;
+            padding:0;
+            width: 200px; height: 200px;
+            background-color: blueviolet;
+            border: 5px dashed #dddddd;
+            box-sizing: border-box;
+        }
+        #fa2 {
+            margin:0;
+            padding:0;
+            width: 200px; height: 200px;
+            background-color: blueviolet;
+            border: 5px solid #dddddd;
+            box-sizing: content-box;
+        }
+        #content {
+            color: black;
+            width: 810px;
+            margin: 0 auto;
+            background-color: #cccccc;
+            overflow: hidden;
+            float: left;
+        }
+        #content div{
+            width: 250px;
+            float:left;
+            background-color: #ffffff;
+            color: black;
+            margin:10px;
+            border-radius: 10px;
+        }
+        ul li{
+            list-style:none;
+        }
+        p {
+            padding: 0 20px;
+            font-size: 1.5em;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="content1">200*200</div>
+    <div id="content2">200*200<br/>margin</div>
+    <div id="content3">200*200<br/>padding</div>
+    <div id="content4">200*200<br/>margin<br/>padding</div>
+    <div id="fa">200*200<br/>border, border-box</div>
+    <div id="fa2">200*200<br/>border, content-box</div>
+
+    <div id="content">
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+        <div>
+            <p>공지사항</p>
+            <ul>
+                <li>게시물_01</li>
+                <li>게시물_02</li>
+                <li>게시물_03</li>
+                <li>게시물_04</li>
+                <li>게시물_05</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>0707 실습1</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        header {
+            position: fixed; top:0; left:0;  width:100vw;
+            background-color: white;
+        }
+        header ul {
+            overflow: hidden;
+            text-align: center;
+        }
+        a {
+            text-decoration: none; color:black; display: inline-block;
+        }
+        header ul li {
+            float: left; list-style: none;
+            border: 1px solid #cccccc; padding: 5px 20px;
+            font-size: 2em; display: block;
+        }
+        #section {
+            margin:0 auto; padding-top: 80px;
+        }
+        #section > div{
+            margin:0 auto;
+            position: relative;
+            padding-top: 40px;
+            width: 700px;
+            height: 400px;
+            font-size: 1.7em;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+
+        }
+        .num_1 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS</a></li>
+            <li><a href="#">PYTHON</a></li>
+            <li><a href="#">DJANGO</a></li>
+            <li><a href="#">TEAM_PROJECT</a></li>
+        </ul>
+    </header>
+    <div id="section">
+        <div id="html">
+            <h1>1. HTML</h1>
+            <br/>
+            <p>1주차에는 HTML을 배웁니다.</p>
+            <div class="num_1"><img src="img/angels.jpg" alt="angels"></div>
+        </div>
+        <div id="css">
+            <h1>2. CSS</h1>
+            <br/>
+            <p>HTML과 더불어 CSS 비둘기 두마리를 데려온 사람이 나타납니다.</p>
+            <img src="img/angels.jpg" alt="angels">
+        </div>
+        <div id="python">
+            <h1>3. PYTHON</h1>
+            <br/>
+            <p>2주차에는 PYTHON을 배웁니다.</p>
+            <img src="img/angels.jpg" alt="angels">
+        </div>
+        <div id="django">
+            <h1>4. DJANGO</h1>
+            <br/>
+            <p>3주차부터 5주차까지 3주에 걸쳐 DJANGO를 배웁니다.</p>
+            <img src="img/angels.jpg" alt="angels">
+        </div>
+         <div id="team_project">
+            <h1>5. TEAM_PROJECT</h1>
+            <br/>
+            <p>6주차부터 8주차까지 3주에 걸쳐 팀 프로젝트를 진행합니다.</p>
+             <img src="img/angels.jpg" alt="angels">
+        </div>
+    </div>
+</body>
+</html>

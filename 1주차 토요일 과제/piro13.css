@@ -1,0 +1,26 @@
+@import 'reset,css.css'
+:root{
+    --main-color: lightgray;
+    --main-border: 1px solid var(--main-color);
+}
+
+
+.header__container {
+    padding: 0.5em 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: var(--main-border);
+}
+
+.header__icon{
+    font-size: 1.2em;
+}
+
+.profile__left >img {
+    width:3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    border: var(--main-border);
+    padding: 2px;
+}
