@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7. CSS 기본 2</title>
+    <style>
+        #header {
+            width: 500px;
+            background-color: grey;
+            border: 3px solid blueviolet;
+            text-align:center;
+        }
+        #wrap {
+            width: 500px;
+            background-color: aqua;
+            border: 3px solid red;
+            text align: center;
+            overflow: hidden;
+        }
+        #content {
+            width: 350px;
+            border: 3px solid blue;
+            float: left;
+        }
+        #side_banner {
+            width 150px;
+            border: 3px solid blue;
+            float: left;
+        }
+        #footer {
+            clear: both;
+            width : 500px;
+            background-color: grey;
+            border: 3px solid blueviolet;
+            text-align: center;
+        }
+        .menu1 {
+            color :blue;
+            font-weight: bold;
+        }
+        ul li.menu1, ol li.menu2, ol li.menu3 {
+            font-size: 33px;
+        }
+        input {
+            color : green;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        input[type=text] {
+            color: orange;
+            font-size: 50px;
+            width : 200px;
+        }
+        input[type=tel] {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <h1>HEADER</h1>
+</div>
+
+<div id="wrap">
+    <div id="content">
+        <h1>CONTENT</h1>
+        <ul>
+           <li class="menu1">menu1</li>
+           <li class="menu2">menu2</li>
+           <li class="menu3">menu3</li>
+           <li class="menu4">menu4</li>
+        </ul>
+        <ol>
+           <li class="menu1">menu1</li>
+           <li class="menu2">menu2</li>
+           <li class="menu3">menu3</li>
+           <li class="menu4">menu4</li>
+        </ol>
+    </div>
+
+    <div id="side_banner">
+        <h1>BANNER</h1>
+        <a href="https://www.google.co.kr"
+           target="_blank">
+        </a>
+    </div>
+</div>
+
+<div id="footer">
+    <h1>FOOTER</h1>
+    <form>
+        이름: <input type = "text"/><br />
+        아이디: <input type = "text"/><br />
+        비밀번호: <input type="password"/><br />
+        전화번호: <input type="tel"><br />
+    </form>
+</div>
+</body>
+</html>

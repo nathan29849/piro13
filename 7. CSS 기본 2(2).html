@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>7. CSS 기본 2(2)</title>
+    <style>
+        #header, #wrap, #footer {
+            border: 3px solid gray;
+            width: 300px;
+        }
+        div ul li {
+            color: red;
+            font-size: 22px;
+        }
+        div > ol {
+            color: blue;
+            font-size: 2px;
+        }
+
+        h3~div {
+            color: orange;
+            font-size: 5px;
+        }
+        h3+div {
+            color: chartreuse;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        #title~div{
+            width : 150px;
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+  <div id="header">
+    <h1>HEADER</h1>
+</div>
+
+<div id="wrap">
+    <div id="content">
+        <h1>CONTENT</h1>
+        <ul>
+           <li class="menu1">menu1</li>
+           <li class="menu2">menu2</li>
+           <li class="menu3">menu3</li>
+           <li class="menu4">menu4</li>
+        </ul>
+        <ol>
+           <li class="menu1">menu1</li>
+           <li class="menu2">menu2</li>
+           <li class="menu3">menu3</li>
+           <li class="menu4">menu4</li>
+        </ol>
+    </div>
+
+    <div id="side_banner">
+        <h1>BANNER</h1>
+        <a href="https://www.google.co.kr"
+           target="_blank">
+        </a>
+    </div>
+</div>
+
+<div id="footer">
+    <h1>FOOTER</h1>
+    <h3 id="title">동위 선택자(+,-)</h3>
+    <div>div_01</div>
+    <div>div_02</div>
+    <div>div_03</div>
+    <div>div_04</div>
+    <div>div_05</div>
+
+<div/>
+</body>
+</html>
