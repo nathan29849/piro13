@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>26.</title>
+<!--    <link rel="stylesheet" href="ex1.css"/>-->
+    <link rel="stylesheet" href="content_pc.css" media="screen"/>
+<!--    <link rel="stylesheet" href="content_print.css" media="print"/>-->
+
+    <style>
+        @import url('title.css');
+        @import url('ex1.css'); /* link 태그 대신 위치 (요즘 많이 쓰인다고 함.)*/
+        @media print{
+            #wrap .content { color:#272727; padding:30px 10px; }
+        }
+        /*#wrap #header h1 {background-color: #ffff00; text-align: center; height: 200px;}*/
+        /*#wrap #section {background-color: #084a2a; color: #ffffff; height: 300px;}*/
+        /*#wrap #footer {background-color: #ffd800; height: 100px; text-align: center;}*/
+        #wrap {width: 1000px; margin:0 auto;
+        border: 1px solid #cccccc;}
+
+    </style>
+</head>
+<body>
+<div id="wrap">
+        <div id="header">
+        <h1>HEADER</h1>
+    </div>
+
+    <div id="section">
+        <h1>Section</h1>
+        <p1>contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
+        contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
+        contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
+        contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent
+        contentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontentcontent</p1> </div>
+
+    <div id="footer">
+            <h3>FOOTER</h3>
+        </div>
+</div>
+
+</div>
+</body>
+</html>
