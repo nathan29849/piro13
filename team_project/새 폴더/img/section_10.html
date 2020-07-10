@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .section-bg {
+    background-color: #f3f5fa;
+}
+
+        section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+        section {
+    display: block;
+}
+
+        *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+        section {
+    display: block;
+}
+
+
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+    font-family: "Open Sans", sans-serif;
+    color: #444444;
+}
+
+        *, ::after, ::before {
+    box-sizing: border-box;
+}
+
+        [data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+        [data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+        [data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;
+}
+        [data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+        [data-aos=fade-up] {
+    transform: translate3d(0,100px,0);
+}
+
+        @media (min-width: 1200px)
+.container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1140px;
+}
+
+        @media (min-width: 992px)
+.container, .container-lg, .container-md, .container-sm {
+    max-width: 960px;
+}
+
+        @media (min-width: 768px)
+.container, .container-md, .container-sm {
+    max-width: 720px;
+}
+        @media (min-width: 576px)
+.container, .container-sm {
+    max-width: 540px;
+}
+
+        @media (min-width: 1200px)
+.container {
+    max-width: 1140px;
+}
+        @media (min-width: 992px)
+.container {
+    max-width: 960px;
+}
+        @media (min-width: 768px)
+.container {
+    max-width: 720px;
+}
+
+        @media (min-width: 576px)
+.container {
+    max-width: 540px;
+}
+        .container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+        .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+        .section-title h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    color: #37517e;
+}
+
+        h1, h2, h3, h4, h5, h6 {
+    font-family: "Jost", sans-serif;}
+
+        .h2, h2 {
+    font-size: 2rem;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+        h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+}
+
+        h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+        .section-title h2::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+       .section-title h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+        .section-title p {
+    margin-bottom: 0;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+ .faq .faq-list {
+    padding: 0 100px;
+}
+
+        .faq .faq-list ul {
+    padding: 0;
+    list-style: none;
+}
+
+        dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+        ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+        [data-aos][data-aos][data-aos-delay="100"].aos-animate, body[data-aos-delay="100"] [data-aos].aos-animate {
+    transition-delay: .1s;
+}
+
+        [data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+        [data-aos][data-aos][data-aos-delay="100"], body[data-aos-delay="100"] [data-aos] {
+    transition-delay: 0;
+}
+        .faq .faq-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+        [data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+
+
+data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;
+}
+        [data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+
+        [data-aos=fade-up] {
+    transform: translate3d(0,100px,0);
+}
+
+        li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+        .faq .faq-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #47b2e4;
+}
+
+        .bx {
+    font-family: 'boxicons'!important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+        .bx-help-circle:before {
+    content: "\ead9";
+}
+
+        .faq .faq-list a.collapsed {
+    color: #37517e;
+    transition: 0.3s;
+}
+
+        .faq .faq-list a {
+    display: block;
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 500;
+    padding: 0 30px;
+    outline: none;
+}
+
+
+
+        .collapse:not(.show) {
+    display: none;
+}
+
+
+        a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+
+
+        a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+        [data-aos][data-aos][data-aos-delay="200"].aos-animate, body[data-aos-delay="200"] [data-aos].aos-animate {
+    transition-delay: .2s;
+}
+
+        [data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+        [data-aos][data-aos][data-aos-delay="200"], body[data-aos-delay="200"] [data-aos] {
+    transition-delay: 0;
+}
+
+        .faq .faq-list li + li {
+    margin-top: 15px;
+}
+
+        .faq .faq-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+
+        [data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;
+}
+
+        [data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+
+        [data-aos=fade-up] {
+    transform: translate3d(0,100px,0);
+}
+
+        li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+        .faq .faq-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #47b2e4;
+}
+
+        .bx {
+    font-family: 'boxicons'!important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+        i {
+    font-style: italic;
+}
+
+        .bx-help-circle:before {
+    content: "\ead9";
+}
+
+        a:-webkit-any-link {
+    color: -webkit-link;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+        .faq .faq-list .icon-show {
+    display: none;
+}
+
+        .faq .faq-list .icon-show, .faq .faq-list .icon-close {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+        .bx {
+    font-family: 'boxicons'!important;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    display: inline-block;
+    text-transform: none;
+    speak: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+        .bx-chevron-down:before {
+    content: "\ea17";
+}
+
+.faq .faq-list .icon-show, .faq .faq-list .icon-close {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+     .bx-chevron-up:before {
+    content: "\ea24";
+}
+
+   [data-aos][data-aos][data-aos-delay="300"].aos-animate, body[data-aos-delay="300"] [data-aos].aos-animate {
+    transition-delay: .3s;
+}
+        [data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+
+        data-aos][data-aos][data-aos-delay="300"], body[data-aos-delay="300"] [data-aos] {
+    transition-delay: 0;
+}
+
+        .faq .faq-list li + li {
+    margin-top: 15px;
+}
+
+        .faq .faq-list li {
+    padding: 20px;
+    background: #fff;
+    border-radius: 4px;
+    position: relative;
+}
+
+        [data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+
+        [data-aos][data-aos][data-aos-duration="1000"], body[data-aos-duration="1000"] [data-aos] {
+    transition-duration: 1s;
+}
+
+        [data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+
+        [data-aos=fade-up] {
+    transform: translate3d(0,100px,0);
+}
+
+        .faq .faq-list .icon-help {
+    font-size: 24px;
+    position: absolute;
+    right: 0;
+    left: 20px;
+    color: #47b2e4;
+}
+
+        .bx-help-circle:before {
+    content: "\ead9";
+}
+
+        .faq .faq-list a.collapsed {
+    color: #37517e;
+    transition: 0.3s;
+}
+
+        .faq .faq-list {
+            position: relative;
+        }
+
+        .faq .faq-list a{
+            text-decoration: none;
+            color: #37517E;
+            font-weight: bold;
+        }
+
+        .faq .faq-list ul li strong{
+            position: absolute;
+            right: 15px;
+        }
+
+        .faq .faq-list ul ul {
+            display: none;
+        }
+
+        .faq .faq-list ul li:active ul {
+        display: block;
+        }
+
+        .faq .faq-list ul li:hover ul {
+        display: block;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+<section id="faq" class="faq section-bg">
+      <div class="container aos-init aos-animate" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Frequently Asked Questions</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos <br />
+              quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+
+        <div class="faq-list">
+          <ul>
+            <li>
+              <a href="#faq-list-1">
+                  <img src="./Q.PNG" width="1.55%"/>
+                  Non consectetur a erat nam at lectus urna duis? <strong>V</strong></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list" style="">
+                  <ul>
+                      <li><p>
+                  Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                </p></li>
+                  </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#faq-list-1">
+                  <img src="./Q.PNG" width="1.55%"/>
+                  Feugiat scelerisque varius morbi enim nunc? <strong>V</strong></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list" style="">
+                  <ul>
+                      <li><p>
+                  Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                </p></li>
+                  </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#faq-list-1">
+                  <img src="./Q.PNG" width="1.55%"/>
+                  Dolor sit amet consectetur adipiscing elit? <strong>V</strong></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list" style="">
+                  <ul>
+                      <li><p>
+                  Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                </p></li>
+                  </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#faq-list-1">
+                  <img src="./Q.PNG" width="1.55%"/>
+                  Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <strong>V</strong></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list" style="">
+                  <ul>
+                      <li><p>
+                  Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
+                </p></li>
+                  </ul>
+              </div>
+            </li>
+
+            <li>
+              <a href="#faq-list-1">
+                  <img src="./Q.PNG" width="1.55%"/>
+                  Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <strong>V</strong></a>
+              <div id="faq-list-1" class="collapse show" data-parent=".faq-list" style="">
+                  <ul>
+                      <li><p>
+                  Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
+                </p></li>
+                  </ul>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+</body>
+</html>
