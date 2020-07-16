@@ -57,18 +57,20 @@
 #         print("날다")
 
 
-class NotPalindromeError(Exception):
-    def __init__(self):
-        super().__init__('회문이 아닙니다.')
+# class NotPalindromeError(Exception):
+#     def __init__(self):
+#         super().__init__('회문이 아닙니다.')
+#
+# def palindrome(a):
+#     if a == a[::-1]:
+#         print(a)
+#     else:
+#         raise NotPalindromeError
+#
+# try:
+#     word = input()
+#     palindrome(word)
+# except NotPalindromeError as e:
+#     print(e)
 
-def palindrome(a):
-    if a == a[::-1]:
-        print(a)
-    else:
-        raise NotPalindromeError
 
-try:
-    word = input()
-    palindrome(word)
-except NotPalindromeError as e:
-    print(e)
